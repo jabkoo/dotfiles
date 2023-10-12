@@ -1,0 +1,28 @@
+{
+	// Theming
+    "workbench.colorTheme": "Catppuccin Latte",
+    "workbench.iconTheme": "eq-material-theme-icons-darker",
+	"editor.fontFamily": "JetBrainsMono Nerd Font, Monaco, 'Courier New', monospace",
+
+	// Terminal
+    "terminal.external.osxExec": "Alacritty.app",
+
+	// Explorer
+	"files.exclude": {
+		"**/.git": false
+	},
+
+	// Golang
+	"[go]": {
+		"editor.formatOnSave": true,
+		"editor.codeActionsOnSave": {
+			"source.organizeImports": true
+		}
+	},
+	"[go.mod]": {
+		"editor.formatOnSave": false,
+		"editor.codeActionsOnSave": {
+			"source.organizeImports": false
+		}
+	}
+}

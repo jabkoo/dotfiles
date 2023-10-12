@@ -1,0 +1,54 @@
+#!/bin/bash
+
+# commonly used directories
+alias home='$HOME'
+alias dot='$HOME/dotfiles'
+alias dev='$HOME/Repositories'
+alias desktop='$HOME/Desktop'
+alias docs='$HOME/Documents'
+alias dl='$HOME/Downloads'
+alias cloud='$HOME/Library/Mobile\ Documents/com~apple~CloudDocs'
+
+# exa aliases
+alias ls="exa"
+alias l="ls -aF --icons --group-directories-first"
+alias lv="ls -a1F --icons --group-directories-first"
+alias ll='ls -la'
+alias la='ls -lbhHigUmuSa'
+alias lx='ls -lbhHigUmuSa@'
+
+# shortcuts
+alias mk="mkdir"
+alias t="touch"
+alias x="exit"
+alias c="clear"
+alias o="open ."
+alias vi="nvim"
+alias vim="nvim"
+alias v="nvim"
+alias x+="chmod +x"
+alias reload="source ~/.zshrc"
+
+# power
+alias reboot="sudo reboot"
+alias off="sudo shutdown -r now"
+
+# flush dns
+alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
+
+# update all software
+alias updateall="sudo softwareupdate -l; mas outdated; mas upgrade; brew update; brew upgrade; brew cleanup;"
+
+# IP addresses
+alias localip="ipconfig getifaddr en0"
+
+# Empty the Trash on all mounted volumes and the main HDD.
+# Also, clear Apple’s System Logs to improve shell startup speed.
+# Finally, clear download history from quarantine. https://mths.be/bum
+alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV2 'delete from LSQuarantineEvent'; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV2 'vacuum LSQuarantineEvent'"
+
+# Print each PATH entry on a separate line
+alias path='echo -e ${PATH//:/\\n}'
+
+# Weekly cleanup
+alias weekly="update; flush; emptytrash;"

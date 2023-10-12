@@ -1,0 +1,128 @@
+# Layouts
+layouts:
+    - tall
+    - tall-right
+    - wide
+    - floating
+    - fullscreen
+
+# Mods
+mod1:
+    - option
+    - shift
+    - control
+    - command
+mod2:
+    - option
+    - shift
+    - command
+
+# Settings
+enables-layout-hud-on-space-change: false
+follow-space-thrown-windows: false
+window-margins: true
+smart-window-margins: true
+window-margin-size: 3
+
+floating: ["com.apple.systempreferences"]
+
+# Shortcuts
+relaunch-amethyst:
+    mod: "mod1"
+    key: "x"
+
+shrink-main:
+    mod: "mod1"
+    key: ","
+
+expand-main:
+    mod: "mod1"
+    key: "."
+
+decrease-main:
+    mod: "mod2"
+    key: ","
+
+increase-main:
+    mod: "mod2"
+    key: "."
+
+focus-screen-ccw:
+    mod: "mod1"
+    key: "h"
+
+focus-screen-cw:
+    mod: "mod1"
+    key: "l"
+
+throw-space-left:
+    mod: "mod1"
+    key: "left"
+
+throw-space-right:
+    mod: "mod1"
+    key: "right"
+
+throw-space-1:
+    mod: "mod1"
+    key: "1"
+
+throw-space-2:
+    mod: "mod1"
+    key: "2"
+
+throw-space-3:
+    mod: "mod1"
+    key: "3"
+
+throw-space-4:
+    mod: "mod1"
+    key: "4"
+
+throw-space-5:
+    mod: "mod1"
+    key: "5"
+
+throw-space-6:
+    mod: "mod1"
+    key: "6"
+
+throw-space-7:
+    mod: "mod1"
+    key: "7"
+
+throw-space-8:
+    mod: "mod1"
+    key: "8"
+
+throw-space-9:
+    mod: "mod1"
+    key: "9"
+
+throw-space-10:
+    mod: "mod1"
+    key: "0"
+
+display-current-layout:
+    mod: "mod1"
+    key: "c"
+
+select-tall-layout:
+    mod: "mod2"
+    key: "1"
+
+select-tall-right-layout:
+    mod: "mod2"
+    key: "2"
+
+select-wide-layout:
+    mod: "mod2"
+    key: "3"
+
+select-floating-layout:
+    mod: "mod2"
+    key: "4"
+
+select-fullscreen-layout:
+    mod: "mod2"
+    key: "5"

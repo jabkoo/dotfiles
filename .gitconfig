@@ -1,0 +1,7 @@
+[user]
+	name = jabkoo
+	email = jabrzyk.k@gmail.com
+[credential]
+	helper = osxkeychain
+[init]
+	defaultBranch = main
