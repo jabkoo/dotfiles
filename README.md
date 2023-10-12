@@ -9,7 +9,9 @@ Tested only on my MacBook Air (M1, 2020) with Sonoma 14.0 (previously tested wit
 - **Terminal**: Alacritty using zsh /w Antigen, Powerlevel10k, tmux
 - **Color Theme**: Catppuccin Latte
 
-[**SCREENSHOT**]
+
+![Screenshot 2023-10-12 at 16 53 33](https://github.com/jabkoo/dotfiles/assets/83245748/ac233185-d2fc-4321-a125-db3fd40978bf)
+
 
 ## Installation
 
