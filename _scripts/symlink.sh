@@ -4,9 +4,9 @@ source "$HOME/dotfiles/_scripts/utils.sh"
 source "$HOME/.zprofile"
 
 BACKUP_DIR=$HOME/dotfiles-backup
-PROFILE_NAME="jabko"
+FF_PROFILE_NAME="jabko"
 
-profile_folder=""
+ff_profile_folder=""
 
 prepare_astronvim() {
 	info "Cloning AstroNvim"
@@ -18,7 +18,7 @@ prepare_astronvim() {
 prepare_firefox() {
 	info "Setting up Firefox"
 
-    firefox -CreateProfile $PROFILE_NAME
+    firefox -CreateProfile $FF_PROFILE_NAME
 
     firefox -no-remote &
 
@@ -26,12 +26,14 @@ prepare_firefox() {
         sleep 1
     done
 
-    tac "$HOME/Library/Application Support/Firefox/profiles.ini" | sed -e "1 s/default-release/$PROFILE_NAME/; t" -e "1,// s//$PROFILE_NAME/" | tac > temp.txt && mv temp.txt "$HOME/Library/Application Support/Firefox/profiles.ini"
-    sed -i "" "s/default-release/$PROFILE_NAME/g" "$HOME/Library/Application Support/Firefox/installs.ini"
+    ff_profile_folder=$(find "$HOME/Library/Application Support/Firefox/Profiles" -type d -name "*.$FF_PROFILE_NAME" -exec basename {} \;)
+	ff_default_profile_folder=$(find "$HOME/Library/Application Support/Firefox/Profiles" -type d -name "*.default-release" -exec basename {} \;)
+	sed -i "" "s/Default=Profiles\/$ff_default_profile_folder/Default=Profiles\/$ff_profile_folder/g" "$HOME/Library/Application Support/Firefox/profiles.ini"
+    sed -i "" "s/default-release/$FF_PROFILE_NAME/g" "$HOME/Library/Application Support/Firefox/installs.ini"
 
     killall "firefox" 2>/dev/null || true
 
-    profile_folder=$(find "$HOME/Library/Application Support/Firefox/Profiles" -type d -name "*.$PROFILE_NAME")
+	cp -i "$HOME/dotfiles/firefox/org.mozilla.firefox.plist" "$HOME/Library/Preferences"
 }
 
 symlink_icloud_dirs() {
@@ -77,40 +79,38 @@ failed=0
 	prepare_firefox
 
 	symlink_sources=(
-		#"$HOME/dotfiles/.gitconfig"
-		#"$HOME/dotfiles/.editorconfig"
-		#"$HOME/dotfiles/zsh/.zshrc"
-		#"$HOME/dotfiles/amethyst"
-		#"$HOME/dotfiles/tmux"
-		#"$HOME/dotfiles/alacritty"
-		#"$HOME/dotfiles/nvim/lua/user"
-		#"$HOME/dotfiles/asdf/.default-npm-packages"
-		#"$HOME/dotfiles/asdf/.default-python-packages"
-		#"$HOME/dotfiles/vscode/settings.json"
-		#"$HOME/dotfiles/firefox/org.mozilla.firefox.plist"
+		"$HOME/dotfiles/.gitconfig"
+		"$HOME/dotfiles/.editorconfig"
+		"$HOME/dotfiles/zsh/.zshrc"
+		"$HOME/dotfiles/amethyst"
+		"$HOME/dotfiles/tmux"
+		"$HOME/dotfiles/alacritty"
+		"$HOME/dotfiles/nvim/lua/user"
+		"$HOME/dotfiles/asdf/.default-npm-packages"
+		"$HOME/dotfiles/asdf/.default-python-packages"
+		"$HOME/dotfiles/vscode/settings.json"
 		"$HOME/dotfiles/firefox/user.js"
 	)
 
 	symlink_targets=(
-		#"$HOME/.gitconfig"
-		#"$HOME/.editorconfig"
-		#"$HOME/.zshrc"
-		#"$HOME/.config/amethyst"
-		#"$HOME/.config/tmux"
-		#"$HOME/.config/alacritty"
-		#"$HOME/.config/nvim/lua/user"
-		#"$HOME/.config/asdf/.default-npm-packages"
-		#"$HOME/.config/asdf/.default-python-packages"
-		#"$HOME/Library/Application Support/Code/User/settings.json"
-		#"$HOME/Library/Preferences/org.mozilla.firefox.plist"
-		"$profile_folder/user.js"
+		"$HOME/.gitconfig"
+		"$HOME/.editorconfig"
+		"$HOME/.zshrc"
+		"$HOME/.config/amethyst"
+		"$HOME/.config/tmux"
+		"$HOME/.config/alacritty"
+		"$HOME/.config/nvim/lua/user"
+		"$HOME/.config/asdf/.default-npm-packages"
+		"$HOME/.config/asdf/.default-python-packages"
+		"$HOME/Library/Application Support/Code/User/settings.json"
+		"$HOME/Library/Application Support/Firefox/Profiles/$ff_profile_folder/user.js"
 	)
 
-	#backup_files
+	backup_files
 
-	#prepare_astronvim
+	prepare_astronvim
 
-	#symlink_icloud_dirs
+	symlink_icloud_dirs
 	symlink_files
 
 ) || failed=1
