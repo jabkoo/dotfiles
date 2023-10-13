@@ -16,6 +16,8 @@ failed=0
 	else
 		info "Rosetta is already installed"
 	fi
+
+	sudo xcode-select -s /Library/Developer/CommandLineTools
 ) || failed=1
 
 if [ $failed -eq 0 ]; then
