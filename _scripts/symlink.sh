@@ -68,6 +68,7 @@ symlink_files() {
 
 		info "Creating symlink from $source_name to $target_name"
        	ln -fns "$source_name" "$target_name"
+		chflags nouchg "$target_name"
 		i=${i}+1
     done
 }
