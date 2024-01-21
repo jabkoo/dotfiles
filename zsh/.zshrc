@@ -13,7 +13,9 @@ antigen use oh-my-zsh
 
 antigen bundles <<EOBUNDLES
 	asdf
+	direnv
     git
+	jump
     zsh-users/zsh-syntax-highlighting
     zsh-users/zsh-autosuggestions
     zsh-users/zsh-completions
