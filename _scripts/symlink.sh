@@ -8,13 +8,6 @@ FF_PROFILE_NAME="jabko"
 
 ff_profile_folder=""
 
-prepare_astronvim() {
-	info "Cloning AstroNvim"
-
-	rm -rf "$HOME/.config/nvim"
-	git clone --depth 1 https://github.com/AstroNvim/AstroNvim "$HOME/.config/nvim"
-}
-
 prepare_firefox() {
 	info "Setting up Firefox"
 
@@ -86,7 +79,6 @@ failed=0
 		"$HOME/dotfiles/amethyst"
 		"$HOME/dotfiles/tmux"
 		"$HOME/dotfiles/alacritty"
-		"$HOME/dotfiles/nvim/lua/user"
 		"$HOME/dotfiles/.tool-versions"
 		"$HOME/dotfiles/asdf/.default-npm-packages"
 		"$HOME/dotfiles/asdf/.default-python-packages"
@@ -102,7 +94,6 @@ failed=0
 		"$HOME/.config/amethyst"
 		"$HOME/.config/tmux"
 		"$HOME/.config/alacritty"
-		"$HOME/.config/nvim/lua/user"
 		"$HOME/.tool-versions"
 		"$HOME/.config/asdf/.default-npm-packages"
 		"$HOME/.config/asdf/.default-python-packages"
@@ -111,8 +102,6 @@ failed=0
 	)
 
 	backup_files
-
-	prepare_astronvim
 
 	symlink_icloud_dirs
 	symlink_files
