@@ -10,21 +10,8 @@ failed=0
 (
 	title "Installing language runtimes with asdf"
 
-	asdf plugin add golang https://github.com/asdf-community/asdf-golang.git
-	asdf plugin add python https://github.com/asdf-community/asdf-python.git
-	asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
-
-	asdf install golang latest
-	asdf install python latest
-	asdf install nodejs lts
-
-	asdf global golang latest
-	asdf global python latest
-	asdf global nodejs lts
-
-	asdf reshim golang
-	asdf reshim python
-	asdf reshim nodejs
+	asdf install
+	asdf reshim
 ) || failed=1
 
 if [ $failed -eq 0 ]; then

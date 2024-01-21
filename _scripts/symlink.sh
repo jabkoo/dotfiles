@@ -87,6 +87,7 @@ failed=0
 		"$HOME/dotfiles/tmux"
 		"$HOME/dotfiles/alacritty"
 		"$HOME/dotfiles/nvim/lua/user"
+		"$HOME/dotfiles/.tool-versions"
 		"$HOME/dotfiles/asdf/.default-npm-packages"
 		"$HOME/dotfiles/asdf/.default-python-packages"
 		"$HOME/dotfiles/vscode/settings.json"
@@ -102,6 +103,7 @@ failed=0
 		"$HOME/.config/tmux"
 		"$HOME/.config/alacritty"
 		"$HOME/.config/nvim/lua/user"
+		"$HOME/.tool-versions"
 		"$HOME/.config/asdf/.default-npm-packages"
 		"$HOME/.config/asdf/.default-python-packages"
 		"$HOME/Library/Application Support/Code/User/settings.json"
@@ -114,7 +116,6 @@ failed=0
 
 	symlink_icloud_dirs
 	symlink_files
-
 ) || failed=1
 
 if [ $failed -eq 0 ]; then
