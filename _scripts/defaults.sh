@@ -122,7 +122,7 @@ configure_defaults() {
 	sudo pmset -a autorestart 1
 
 	# Save screenshots to iCloud
-	defaults write com.apple.screencapture location -string "${HOME}/tasks/References/Files/Screenshots"
+	defaults write com.apple.screencapture location -string "${HOME}/obsidian/Files/Screenshots"
 
 	# Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
 	defaults write com.apple.screencapture type -string "png"

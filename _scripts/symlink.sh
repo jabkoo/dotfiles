@@ -39,8 +39,7 @@ prepare_firefox() {
 symlink_icloud_dirs() {
 	info "Symlinking iCloud directories"
 
-	ln -fns "$HOME/Library/Mobile Documents/iCloud~md~Obsidian/Documents/TasksVault" "$HOME/tasks"
-	ln -fns "$HOME/Library/Mobile Documents/iCloud~md~Obsidian/Documents/NotesVault" "$HOME/notes"
+	ln -fns "$HOME/Library/Mobile Documents/iCloud~md~Obsidian/Documents/MyVault" "$HOME/obsidian"
 }
 
 backup_files() {

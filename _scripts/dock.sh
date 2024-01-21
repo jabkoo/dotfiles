@@ -113,12 +113,11 @@ failed=0
 	add_app_to_dock "Brave Browser"
 	add_app_to_dock "Firefox"
 	add_app_to_dock "Calendar"
-	add_app_to_dock "Reminders"
 	add_app_to_dock "Notes"
 	add_app_to_dock "Obsidian"
-	add_app_to_dock "Spotify"
+	add_app_to_dock "Music"
 	add_app_to_dock "Bitwarden"
-	add_folder_to_dock "${HOME}/tasks/References/Files" -s 1 -d 0 -v 2
+	add_folder_to_dock "${HOME}/obsidian/Files" -s 1 -d 0 -v 2
 
 	killall Dock
 ) || failed=1
