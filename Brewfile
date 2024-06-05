@@ -49,16 +49,12 @@ cask "background-music"
 cask "bitwarden"
 cask "blackhole-16ch"
 cask "brave-browser"
-cask "cleanmymac"
 cask "docker"
 cask "firefox"
 cask "karabiner-elements"
-cask "obsidian"
 cask "raycast"
 cask "spaceid", args: { no_quarantine: true }
-cask "spotify"
 cask "the-unarchiver"
-cask "wireshark"
 cask "visual-studio-code"
 
 # Fonts
@@ -66,12 +62,13 @@ cask "font-jetbrains-mono-nerd-font"
 cask "font-ia-writer-mono"
 
 # App Store
+mas "NotePlan 3", id: 1505432629
+mas "TestFlight", id: 899247664
+mas "Xcode", id: 497799835
 mas "Microsoft Excel", id: 462058435
 mas "Microsoft PowerPoint", id: 462062816
 mas "Microsoft Word", id: 462054704
 mas "OneDrive", id: 823766827
-mas "TestFlight", id: 899247664
-mas "Xcode", id: 497799835
 
 # VSCode
 vscode "Catppuccin.catppuccin-vsc"
@@ -83,6 +80,3 @@ vscode "mhutchie.git-graph"
 vscode "donjayamanne.githistory"
 vscode "codezombiech.gitignore"
 vscode "golang.go"
-vscode "ms-python.python"
-vscode "ms-python.vscode-pylance"
-vscode "ms-vscode-remote.remote-containers"
