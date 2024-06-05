@@ -26,7 +26,7 @@ usage() {
 	echo "  -o, --only          Execute only specified scripts"
 	echo "  -e, --except        Execute with exclusion of provided scripts"
 	echo "Available scripts:"
-	echo "  dirs      			Creates custom directories"
+	echo "  dirs      			Creates directories"
 	echo "  softwareupdate      Runs MacOS software update and installs Rosetta"
 	echo "  homebrew            Installs Homebrew package manager"
 	echo "  packages            Downloads Homebrew packages defined in Brewfile"

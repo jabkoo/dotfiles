@@ -10,6 +10,9 @@ failed=0
 	dirs=(
 		"$HOME/Projects/selfhosted"
 		"$HOME/Projects/jabkoo"
+		"$HOME/.config"
+		"$HOME/.config/asdf"
+		"$HOME/.ssh"
 	)
 
 	for dir in "${dirs[@]}"; do

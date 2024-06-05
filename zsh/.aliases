@@ -9,8 +9,8 @@ alias docs='$HOME/Documents'
 alias dl='$HOME/Downloads'
 alias cloud='$HOME/Library/Mobile\ Documents/com~apple~CloudDocs'
 
-# exa aliases
-alias ls="exa"
+# eza aliases
+alias ls="eza"
 alias l="ls -aF --icons --group-directories-first"
 alias lv="ls -a1F --icons --group-directories-first"
 alias ll='ls -la'

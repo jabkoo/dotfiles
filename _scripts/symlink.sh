@@ -32,7 +32,7 @@ prepare_firefox() {
 symlink_icloud_dirs() {
 	info "Symlinking iCloud directories"
 
-	ln -fns "$HOME/Library/Mobile Documents/iCloud~md~Obsidian/Documents/MyVault" "$HOME/obsidian"
+	ln -fns "$HOME/Library/Containers/co.noteplan.NotePlan3/Data/Library/Application Support/co.noteplan.NotePlan3" "$HOME/noteplan"
 }
 
 backup_files() {

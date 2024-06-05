@@ -2,10 +2,6 @@ cask_args appdir: "/Applications"
 
 # Tap Homebrew
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/cask-fonts"
-tap "homebrew/cask-versions"
-tap "homebrew/core"
 tap "homebrew/services"
 
 # Brew
@@ -17,7 +13,7 @@ brew "coreutils"
 brew "curl"
 brew "diffutils"
 brew "direnv"
-brew "exa"
+brew "eza"
 brew "fd"
 brew "ffmpeg"
 brew "findutils"

@@ -12,14 +12,14 @@ source $HOME/dotfiles/zsh/antigen.zsh
 antigen use oh-my-zsh
 
 antigen bundles <<EOBUNDLES
-	asdf
+  asdf
 	direnv
-    git
+  git
 	jump
-    zsh-users/zsh-syntax-highlighting
-    zsh-users/zsh-autosuggestions
-    zsh-users/zsh-completions
-    zsh-users/zsh-history-substring-search
+  zsh-users/zsh-syntax-highlighting
+  zsh-users/zsh-autosuggestions
+  zsh-users/zsh-completions
+  zsh-users/zsh-history-substring-search
 EOBUNDLES
 
 antigen theme romkatv/powerlevel10k

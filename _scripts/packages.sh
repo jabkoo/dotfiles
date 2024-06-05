@@ -7,7 +7,7 @@ failed=0
 (
 	title "Installing packages from Homebrew"
 
-	brew bundle --cleanup --file "$DOTFILES/Brewfile"
+	/opt/homebrew/bin/brew bundle --cleanup --file "$DOTFILES/Brewfile"
 ) || failed=1
 
 if [ $failed -eq 0 ]; then
