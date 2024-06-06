@@ -2,7 +2,7 @@
 
 A space for my MacOS dotfiles. It also includes few scripts to automate most of my setup from scratch.
 
-Tested only on my MacBook Air (M1, 2020) with Sonoma 14.0 (previously tested with Ventura 13.2 - 13.5.1).
+Tested only on my MacBook Air (M1, 2020) with Sonoma 14.5 (previously tested with Sonoma 14.0, and Ventura 13.2 - 13.5.1).
 
 - **WM**: Amethyst
 - **Editor**: Neovim, sometimes VS Code
@@ -33,6 +33,7 @@ Both scripts accept following options:
 - `-e, --except`: Executes with exclusion of specified scripts
 
 Available scripts:
+- `dirs`: Creates necessary directories
 - `softwareupdate`: Runs MacOS software update and installs Rosetta
 - `homebrew`: Installs Homebrew package manager
 - `packages`: Downloads Homebrew packages defined in Brewfile
