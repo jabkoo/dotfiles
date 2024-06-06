@@ -71,7 +71,7 @@ failed=0
 		"$HOME/dotfiles/.tool-versions"
 		"$HOME/dotfiles/zsh/.zshrc"
 		"$HOME/dotfiles/ssh/config"
-		"$HOME/dotfiles/asdf
+		"$HOME/dotfiles/asdf"
 		"$HOME/dotfiles/nvim"
 		"$HOME/dotfiles/amethyst"
 		"$HOME/dotfiles/tmux"
@@ -87,7 +87,7 @@ failed=0
 		"$HOME/.tool-versions"
 		"$HOME/.zshrc"
 		"$HOME/.ssh/config"
-		"$HOME/.config/asdf
+		"$HOME/.config/asdf"
 		"$HOME/.config/nvim"
 		"$HOME/.config/amethyst"
 		"$HOME/.config/tmux"

@@ -68,9 +68,9 @@ mas "Microsoft Word", id: 462054704
 mas "OneDrive", id: 823766827
 
 # VSCode
-vscode "Catppuccin.catppuccin-vsc"
+vscode "catppuccin.catppuccin-vsc"
 vscode "equinusocio.vsc-material-theme-icons"
-vscode "EditorConfig.EditorConfig"
+vscode "editorconfig.editorconfig"
 vscode "vscodevim.vim"
 vscode "waderyan.gitblame"
 vscode "mhutchie.git-graph"

@@ -106,7 +106,7 @@ install() {
 	scripts_to_run=("${AVAILABLE_SCRIPTS[@]}")
 	run_scripts
 
-	ok "Finished installation of dotfiles. Please remember to reboot your system to apply all settings."
+	info "Finished installation of dotfiles. Please remember to reboot your system to apply all settings."
 }
 
 run_scripts() {
