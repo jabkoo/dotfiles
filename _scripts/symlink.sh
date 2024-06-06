@@ -74,11 +74,10 @@ failed=0
 	symlink_sources=(
 		"$HOME/dotfiles/.gitconfig"
 		"$HOME/dotfiles/.editorconfig"
-		"$HOME/dotfiles/zsh/.zshrc"
 		"$HOME/dotfiles/.tool-versions"
+		"$HOME/dotfiles/zsh/.zshrc"
 		"$HOME/dotfiles/ssh/config"
-		"$HOME/dotfiles/asdf/.default-npm-packages"
-		"$HOME/dotfiles/asdf/.default-python-packages"
+		"$HOME/dotfiles/asdf
 		"$HOME/dotfiles/nvim"
 		"$HOME/dotfiles/amethyst"
 		"$HOME/dotfiles/tmux"
@@ -91,11 +90,10 @@ failed=0
 	symlink_targets=(
 		"$HOME/.gitconfig"
 		"$HOME/.editorconfig"
-		"$HOME/.zshrc"
 		"$HOME/.tool-versions"
+		"$HOME/.zshrc"
 		"$HOME/.ssh/config"
-		"$HOME/.config/asdf/.default-npm-packages"
-		"$HOME/.config/asdf/.default-python-packages"
+		"$HOME/.config/asdf
 		"$HOME/.config/nvim"
 		"$HOME/.config/amethyst"
 		"$HOME/.config/tmux"

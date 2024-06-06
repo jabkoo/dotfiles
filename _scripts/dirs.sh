@@ -11,7 +11,6 @@ failed=0
 		"$HOME/Projects/selfhosted"
 		"$HOME/Projects/jabkoo"
 		"$HOME/.config"
-		"$HOME/.config/asdf"
 		"$HOME/.ssh"
 	)
 

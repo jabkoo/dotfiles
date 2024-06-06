@@ -10,6 +10,10 @@ failed=0
 (
 	title "Installing language runtimes with asdf"
 
+	asdf plugin add nodejs
+	asdf plugin add python
+	asdf plugin add golang
+
 	asdf install
 	asdf reshim
 ) || failed=1
