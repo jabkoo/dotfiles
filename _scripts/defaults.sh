@@ -121,9 +121,6 @@ configure_defaults() {
 	# Turn on automatic reset on power loss
 	sudo pmset -a autorestart 1
 
-	# Save screenshots to iCloud
-	defaults write com.apple.screencapture location -string "${HOME}/noteplan/Files/Screenshots"
-
 	# Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
 	defaults write com.apple.screencapture type -string "png"
 
