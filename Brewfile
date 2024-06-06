@@ -40,7 +40,7 @@ brew "z"
 brew "zsh"
 
 # Cask
-cask "alacritty", args: { no_quarantine: true }
+cask "alacritty"
 cask "amethyst"
 cask "background-music"
 cask "bitwarden"
@@ -50,7 +50,7 @@ cask "docker"
 cask "firefox"
 cask "karabiner-elements"
 cask "raycast"
-cask "spaceid", args: { no_quarantine: true }
+cask "spaceid"
 cask "the-unarchiver"
 cask "visual-studio-code"
 

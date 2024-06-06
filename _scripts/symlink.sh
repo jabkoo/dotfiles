@@ -29,12 +29,6 @@ prepare_firefox() {
 	cp -i "$HOME/dotfiles/firefox/org.mozilla.firefox.plist" "$HOME/Library/Preferences"
 }
 
-symlink_icloud_dirs() {
-	info "Symlinking iCloud directories"
-
-	ln -fns "$HOME/Library/Containers/co.noteplan.NotePlan3/Data/Library/Application Support/co.noteplan.NotePlan3" "$HOME/noteplan"
-}
-
 backup_files() {
 	info "Backing up dotfiles to $BACKUP_DIR"
 
@@ -104,8 +98,6 @@ failed=0
 	)
 
 	backup_files
-
-	symlink_icloud_dirs
 	symlink_files
 ) || failed=1
 
