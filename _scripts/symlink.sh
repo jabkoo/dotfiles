@@ -99,6 +99,8 @@ failed=0
 
 	backup_files
 	symlink_files
+
+	# ln -fns "$HOME/Library/Containers/co.noteplan.NotePlan3/Data/Library/Application Support/co.noteplan.NotePlan3" "$HOME/noteplan"
 ) || failed=1
 
 if [ $failed -eq 0 ]; then
