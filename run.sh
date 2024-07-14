@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if command "git" >/dev/null 2>&1; then
+if type git >/dev/null; then
 	git clone https://github.com/jabkoo/dotfiles ~/dotfiles
 	chmod +x ~/dotfiles
  	touch .zprofile
